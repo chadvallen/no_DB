@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Raleway:300|Roboto+Slab:100');
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url('../images/background.jpg');
+    padding-top: 30px;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+
+.child {
+   flex-basis: 300px;
+   padding: 25px 30px;
+   margin: 30px 25px 30px 20px;
+   justify-content: center;
+   background: rgb(20, 20, 20);
+   color: lightgray;
+   border-radius: 10px;
+   box-shadow: 15px 25px 20px rgba(0, 0, 0, .8);
+   font-family: 'Didact Gothic', sans-serif;
+   border: 3px solid rgb(5, 5, 5);
+}
+
+img {
+    width: 320px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+.openButton {
+    padding: 5px 30px;
+    background: rgb(192, 192, 192);
+    border: none;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.openButton:hover {
+    padding: 5px 30px;
+    background: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.openButton:active {
+    color: white;
+    background: rgb(68, 68, 68);
+}
+
+.closeButton {
+    margin-top: 15px;
+    padding: 5px 33px;
+    background: rgb(97, 97, 97);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.closeButton:hover {
+    background: rgb(87, 87, 87);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.closeButton:active {
+    color: white;
+    background: rgb(43, 43, 43);
+}
