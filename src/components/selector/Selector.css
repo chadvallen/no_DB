@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Raleway:300|Roboto+Slab:100');
+
+.selector {
+    padding-bottom: 30px;
+    text-align: center;
+    background: rgb(26, 26, 26);
+    border-bottom: 10px solid black;
+    
+}
+
+h4 {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.selectBox {
+    border: 0;
+   color: #EEE;
+   background: rgb(83, 83, 83);
+   font-size: 14px;
+   width: 200px;
+   height: 30px;
+ 
+   
+}

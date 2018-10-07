@@ -9,6 +9,7 @@
     padding-top: 30px;
     background-attachment: fixed;
     padding-bottom: 30px;
+
 }
 
 .child {
@@ -16,12 +17,36 @@
    padding: 25px 30px;
    margin: 30px 25px 30px 20px;
    justify-content: center;
-   background: rgb(20, 20, 20);
+   background: rgb(34, 34, 34);
    color: lightgray;
    border-radius: 10px;
-   box-shadow: 15px 25px 20px rgba(0, 0, 0, .8);
+   box-shadow: 15px 25px 40px rgba(0, 0, 0, .8);
+   font-family: 'Didact Gothic', sans-serif;
+   border: 4px solid rgb(5, 5, 5);
+}
+
+.inputBox {
+    width: 300px;
+    height: 350px;
+    background: rgb(35, 35, 35);
+    margin: 30px 25px 30px 20px;
+    padding: 15px 30px 40px 30px;
+    color: lightgray;
+   border-radius: 10px;
+   box-shadow: 15px 25px 40px rgba(0, 0, 0, .8);
    font-family: 'Didact Gothic', sans-serif;
    border: 3px solid rgb(5, 5, 5);
+}
+
+label {
+    padding: 10px;
+}
+input {
+    margin: 10px 10px;
+}
+
+textarea {
+    margin: 5px 0 0 10px;
 }
 
 img {
@@ -36,7 +61,8 @@ h2 {
 
 .openButton {
     padding: 5px 30px;
-    background: rgb(192, 192, 192);
+    background: rgb(19, 97, 56);
+    color: white;
     border: none;
     border-radius: 5px;
     margin-left: 100px;
@@ -75,4 +101,10 @@ h2 {
 .closeButton:active {
     color: white;
     background: rgb(43, 43, 43);
+}
+
+.padding {
+    margin-left: 125px;
+    background: rgb(88, 22, 22);
+    padding: 5px 20px;
 }
