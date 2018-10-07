@@ -2,13 +2,10 @@ import React, { Component } from 'react'
 import './Footer.css'
 import logo from '../images/transparentlogo.png'
 
-class Footer extends Component {
-    constructor() {
-        super();
+export default function Footer() {
+   
 
-    }
-
-    render() {
+   
         return (
             <div>
                 <footer>
@@ -17,7 +14,6 @@ class Footer extends Component {
                 </footer>
             </div>
         )
-    }
+    
 }
 
-export default Footer;
