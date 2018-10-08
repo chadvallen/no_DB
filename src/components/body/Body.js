@@ -13,100 +13,80 @@ class Body extends Component {
             name: '',
             flavor: '',
             location: '',
-            picUrl: '',
-            region: ''
+            picUrl: ''
         }
     }
 
+    // API Call to receive coffee list
     componentDidMount() {
         axios.get('/api/coffees').then(res => {
-            
             this.setState({coffeeList: res.data})
         })
     }
 
+    // Method to open descriptions
     openDescription = () => {
         this.setState({readMore: true})
     }
 
+    // Method to close description
     closeDescription = () => {
         this.setState({readMore: false})
     }
 
+    // Method to add new coffee to API
     createCoffee = () => {
         let newCoffee = {
             name: this.state.name,
             flavor: this.state.flavor,
             location: this.state.location,
             picUrl: this.state.picUrl,
-            region: this.state.region,
             description: this.state.description
         }
         
         axios.post(`/api/coffees`, newCoffee).then(results => {
-            
             this.setState({coffeeList: results.data})
         })
     }
 
+    // Method to update flavor for selected coffee
     updateCoffee = (flavor, id) => {
         axios.put(`/api/coffees/${id}`, {flavor}).then(results => {
             this.setState({coffeeList: results.data})
         })
     }
 
+    // Method to delete coffee from API
     deleteCoffee = (id) => {
         axios.delete(`/api/coffees/${id}`).then(results => {
             this.setState({coffeeList: results.data})
         })
     }
 
-
+    // Method to handle onChange inputs
     inputHandler = (e) => {
         this.setState({[e.target.name]: e.target.value});
     }
 
-    filterRegions = () => {
-        let filtered = this.state.coffeeList.filter(item => {
-            if (item.region === "Africa") {
-                console.log(item);
-                return item;
-            } else if (item.region === "Latin America/South America") {
-                return item;
-            } else if (item.region === "Asia/Pacific") {
-                return item;
-            } 
-                
-            return (
-                <div className="child">
-
-                
-                </div>
-            )
-        })
-    }
-
-
+    
     render() {
         
+        // Function to map over coffeeList array to display coffes
         let newArray  = this.state.coffeeList.map(item => {
             
             return (
              <div className="child">
                  <img src={item.picUrl} />
-                 <h2>Name:  {item.name}</h2>
+                 <h2>{item.name}</h2>
 
+                 {/* Button to open description for coffees */}
                  <button className="openButton" onClick={this.openDescription}>Description</button>
-
                  {this.state.readMore && 
                  <div>
-                    
-                     <p>Region: {item.region}</p>
+                     <p>{item.location}</p>
                      <p>Flavor Notes: {item.flavor}</p>
-                     <p>Location: {item.location}</p>
                      <p>Description: {item.description} <br></br></p> 
                      <div>
-
                         <label for="flavor">Update Flavors:</label>
                         <input name="flavor" onChange={event => this.inputHandler(event)}></input>
                         <button onClick={() => this.updateCoffee( this.state.flavor, item.id)}>Edit</button>
@@ -114,29 +94,29 @@ class Body extends Component {
                     </div>
                 </div>}
                  <br></br>
+                 {/* Button to close description for coffees */}
                 <button className="closeButton padding" onClick={() => this.deleteCoffee(item.id)}>Delete</button>
-                
-
              </div>
             )
         })
 
         return (
-
         <div>
-            {/* <Selector filterRegions={this.props.filterRegions}/> */}
+            <h6><a href="https://www.starbucks.com/store-locator"><span>&#8592;</span> Store Locator</a></h6>
+            {/* Link to Starbucks Reserve Page */}
+            <h5><a href="https://www.starbucksreserve.com/en-us/coffee/archive">More Reserve Coffees <span> &#8594;</span></a></h5>
+                {/* Opening tag to the body/parent page */}
                 <div className="parent">{newArray}
             
+                    {/* Add coffee input box */}
                     <div className="inputBox">
                         <h2>Add Coffee: </h2>
                         <label for="name">Name:</label>
                         <input name="name" onChange={event => this.inputHandler(event)}></input><br></br>
-                        <label for="flavor">Flavors:</label>
-                        <input name="flavor" onChange={event => this.inputHandler(event)}></input><br></br>
-                        <label for="region">Region:</label>
-                        <input name="region" onChange={event => this.inputHandler(event)}></input><br></br>
                         <label for="location">Location:</label>
                         <input name="location" onChange={event => this.inputHandler(event)}></input><br></br>
+                        <label for="flavor">Flavors:</label>
+                        <input name="flavor" onChange={event => this.inputHandler(event)}></input><br></br>
                         <label for="description">Notes:</label>
                         <textarea name="description" rows="5" cols="30" onChange={event => this.inputHandler(event)}></textarea><br></br>
                         <label for="picUrl">Add picture URL:</label>
@@ -144,6 +124,7 @@ class Body extends Component {
                         <button className="openButton" onClick={() => this.createCoffee()}>Add</button>
                     </div>
                 </div>
+                
         </div>
         )
     }

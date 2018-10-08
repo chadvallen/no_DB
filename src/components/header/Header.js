@@ -15,7 +15,7 @@ class Header extends Component {
             <div>
                 <header>
                  <img className="logo" src={logo} />
-                 <h1>Starbucks Reserve Collection</h1>
+                 <h1>Starbucks Reserve<sup><span className="tm">&#8482;</span></sup> Collection</h1>
                  <img className="siren" src={siren} />
                 </header>
             </div>

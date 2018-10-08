@@ -1,6 +1,6 @@
 coffeeSelection = [
     {
-        name: "CHINA COMAC ESTATE", 
+        name: "China Comac Estate", 
         flavor: "Forest floor aromas with notes of green herbs and chocolate and a malty-sweet finish.",
         location: "YUNNAN, CHINA",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_ChinaComacEstate_1100x1100.jpg',
@@ -9,7 +9,7 @@ coffeeSelection = [
         id: 0
     },
     {
-        name: "PERÚ EL LIRIO", 
+        name: "Peru El Lirio", 
         flavor: "Aromatic florals with flavorful accents of toffee and cocoa.",
         location: "CAJAMARCA, PERU",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_PeruElLirio_1100x1100.jpg',
@@ -18,7 +18,7 @@ coffeeSelection = [
         id: 1
     },
     {
-        name: "ETHIOPIA BITTA FARM", 
+        name: "Ethiopia Bitta Farm", 
         flavor: "Perfumed jasmine aromas with ginger spice and orange peel accents",
         location: "KAFFA ZONE, ETHIOPIA",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_EthiopiaBittaFarm1100x1100.jpg',
@@ -27,7 +27,7 @@ coffeeSelection = [
         id: 2
     },
     {
-        name: "D.R. CONGO KAWA KABUYA", 
+        name: "D.R. Congo Kawa Kabuya", 
         flavor: "Lovely scents of wild berry with lemon and black cherry flavors",
         location: "NORTH KIVU, D.R. CONGO",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_CongoKawaKabuya_1100x1100.jpg',
@@ -36,7 +36,7 @@ coffeeSelection = [
         id: 3
     },
     {
-        name: "RWANDA KANZU", 
+        name: "Rwanda Kanzu", 
         flavor: "Red currant and Asian pear flavors with a syrupy mouthfeel.",
         location: "NYAMASHEKE, RWANDA",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_RwandaKanzu_1100x1100.jpg',
@@ -45,7 +45,7 @@ coffeeSelection = [
         id: 4
     },
     {
-        name: "MICROBLEND NO. 21", 
+        name: "Microblend No. 21", 
         flavor: "Candied citrus flavors enrobed in dark chocolate.",
         location: "GUATEMALA/KENYA",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_Microblend21_1100x1100.jpg',
@@ -54,7 +54,7 @@ coffeeSelection = [
         id: 5
     },
     {
-        name: "PERÚ CHONTALÍ", 
+        name: "Peru Chontali", 
         flavor: "Juicy acidity with red apple and candied lemon notes and a dusting of cocoa.",
         location: "CAJAMARCA , PERU",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_PeruChontali__1100x1100.jpg',
@@ -63,7 +63,7 @@ coffeeSelection = [
         id: 6
     },
     {
-        name: "MICROBLEND NO. 11", 
+        name: "Microblend No. 11", 
         flavor: "Dense with jammy berry notes and a rich mouthfeel.",
         location: "ETHIPOIA/GUATEMALA",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_Microblend11_1100x1100.jpg',
@@ -72,7 +72,7 @@ coffeeSelection = [
         id: 7
     },
     {
-        name: "HONDURAS CAFICO", 
+        name: "Honduras Cafico", 
         flavor: "Floral aromas with bright, juicy red currant and a brown-sugar sweetness.",
         location: "CORQUÍN, HONDURAS",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_HondurasCafico_1100x1100.jpg',
@@ -81,7 +81,7 @@ coffeeSelection = [
         id: 8
     },
     {
-        name: "HAWAII KA'U", 
+        name: "Hawaii Ka'u", 
         flavor: "Creamy milk chocolate flavor with an almond sweetness.",
         location: "BIG ISLAND, HAWAII",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_HawaiiKau_1100x1100.jpg',
@@ -90,7 +90,7 @@ coffeeSelection = [
         id: 9
     },
     {
-        name: "COLOMBIA PEDREGAL", 
+        name: "Colombia Pedregal", 
         flavor: "Flavors reminiscent of pear and red apple with a panela sweetness.",
         location: "CAUCA, COLOMBIA",
         picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_ColombiaPedregal_1100x1100.jpg',

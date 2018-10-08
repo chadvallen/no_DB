@@ -11,6 +11,7 @@ class Weather extends Component {
         }
     }
 
+    // API Request to Open Weather Map/Seattle/Imperial Units
     componentDidMount() {
         axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Seattle,US?&units=imperial&APPID=1c8ae511c3b5378d5bfb7ab656887f59
     `)
@@ -22,6 +23,7 @@ class Weather extends Component {
     }
 
     render() {
+        // Temperature Retrieval
         let weather = this.state.currentTemp.map(item => {
             return (
             <span>
@@ -31,7 +33,7 @@ class Weather extends Component {
         })
         return (
             <div className="weather">
-            <p className="weather-text" ><a href="https://openweathermap.org/city/5809844">Current temp in Seattle, WA: {weather}<span>&#8457;</span></a></p>
+            <p className="weather-text" ><a href="https://openweathermap.org/city/5809844"><span>&#9749; </span> Current temp in Seattle, WA: <b>{weather}<span>&#8457;</span></b></a></p>
             </div>
         )
     }
