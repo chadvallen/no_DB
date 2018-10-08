@@ -33,7 +33,7 @@ class Weather extends Component {
         })
         return (
             <div className="weather">
-            <p className="weather-text" ><a href="https://openweathermap.org/city/5809844"><span>&#9749; </span> Current temp in Seattle, WA: <b>{weather}<span>&#8457;</span></b></a></p>
+            <p className="weather-text" ><a href="https://openweathermap.org/city/5809844" target="_blank"><span>&#9749; </span> Current temp at Seattle Roastery: <b>{weather}<span>&#8457;</span></b></a></p>
             </div>
         )
     }

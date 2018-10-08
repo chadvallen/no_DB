@@ -69,8 +69,7 @@ class Body extends Component {
     }
 
     
-    render() {
-        
+    render() { 
         // Function to map over coffeeList array to display coffes
         let newArray  = this.state.coffeeList.map(item => {
             
@@ -83,7 +82,7 @@ class Body extends Component {
                  <button className="openButton" onClick={this.openDescription}>Description</button>
                  {this.state.readMore && 
                  <div>
-                     <p>{item.location}</p>
+                     <p className= "upper">{item.location}</p>
                      <p>Flavor Notes: {item.flavor}</p>
                      <p>Description: {item.description} <br></br></p> 
                      <div>
@@ -102,9 +101,9 @@ class Body extends Component {
 
         return (
         <div>
-            <h6><a href="https://www.starbucks.com/store-locator"><span>&#8592;</span> Store Locator</a></h6>
+            <h6><a href="https://www.starbucks.com/store-locator" target="_blank"><span>&#8592;</span> Store Locator</a></h6>
             {/* Link to Starbucks Reserve Page */}
-            <h5><a href="https://www.starbucksreserve.com/en-us/coffee/archive">More Reserve Coffees <span> &#8594;</span></a></h5>
+            <h5><a href="https://www.starbucksreserve.com/en-us/coffee/archive" target="_blank">More Reserve Coffees <span> &#8594;</span></a></h5>
                 {/* Opening tag to the body/parent page */}
                 <div className="parent">{newArray}
             

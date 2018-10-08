@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background: url('../images/background.jpg');
-    padding-top: 90px;
+    padding-top: 70px;
     background-attachment: fixed;
     padding-bottom: 30px;
 
@@ -16,7 +16,7 @@
 .child {
    flex-basis: 300px;
    padding: 20px 20px;
-   margin: 30px 15px 10px 15px;
+   margin: 30px 25px 20px 15px;
    justify-content: center;
    background: rgb(20, 20, 20);
    color: lightgray;
@@ -131,9 +131,13 @@ h5 {
 }
 
 h5:hover {
-    background: rgba(141, 141, 141, 0.8);
     color: rgb(12, 12, 12);
     text-decoration: none;
+}
+
+h5:active {
+    background: rgba(141, 141, 141, 0.8);
+    box-shadow: none;
 }
 
 h6 {
@@ -152,7 +156,15 @@ h6 {
 }
 
 h6:hover {
-    background: rgba(141, 141, 141, 0.8);
     color: rgb(12, 12, 12);
     text-decoration: none;
+}
+
+h6:active {
+    background: rgba(141, 141, 141, 0.8);
+    box-shadow: none;
+}
+
+.upper {
+    text-transform: uppercase;
 }

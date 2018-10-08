@@ -89,18 +89,10 @@ coffeeSelection = [
         region: "Asia/Pacific",
         id: 9
     },
-    {
-        name: "Colombia Pedregal", 
-        flavor: "Flavors reminiscent of pear and red apple with a panela sweetness.",
-        location: "CAUCA, COLOMBIA",
-        picUrl: 'https://westeurope-cdn.azureedge.net/coffee-media/CoffeeDetail_CoffeeCard_ColombiaPedregal_1100x1100.jpg',
-        description: "Pedregal may translate to “stone field,” but the land surrounding this tiny mountain village is an idyllic environment for coffee trees. They thrive in the volcanic soil, while warm equatorial days and cool evenings further nurture them. The agricultural history here is rich. And the clean, delicious flavors that continually emerge from the region prove the farmers’ skill, passion and dedication again and again. This sweet and juicy cup is the legacy of generations of hardworking growers who’ve expertly harnessed the resources of the breathtaking place they call home.",
-        region: "Latin America/South America",
-        id: 10
-    }
+ 
 ]
 
-let id = 12;
+let id = 11;
 
 module.exports = {
     getCoffee: (req, res) => {
