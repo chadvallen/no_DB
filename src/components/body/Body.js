@@ -43,7 +43,6 @@ class Body extends Component {
             picUrl: this.state.picUrl,
             description: this.state.description
         }
-        
         axios.post(`/api/coffees`, newCoffee).then(results => {
             this.setState({coffeeList: results.data})
         })
@@ -72,10 +71,9 @@ class Body extends Component {
     render() { 
         // Function to map over coffeeList array to display coffes
         let newArray  = this.state.coffeeList.map(item => {
-            
             return (
              <div className="child">
-                 <img src={item.picUrl} />
+                 <img src={item.picUrl} alt="pictureUrl" />
                  <h2>{item.name}</h2>
 
                  {/* Button to open description for coffees */}
@@ -101,29 +99,30 @@ class Body extends Component {
 
         return (
         <div>
-            <h6><a href="https://www.starbucks.com/store-locator" target="_blank"><span>&#8592;</span> Store Locator</a></h6>
+            {/* Link to Store Locater Page */}
+            <h6><a href="https://www.starbucks.com/store-locator" target="_blank" rel="noopener noreferrer"><span>&#8592;</span> Store Locator</a></h6>
             {/* Link to Starbucks Reserve Page */}
-            <h5><a href="https://www.starbucksreserve.com/en-us/coffee/archive" target="_blank">More Reserve Coffees <span> &#8594;</span></a></h5>
+            <h5><a href="https://www.starbucksreserve.com/en-us/coffee/archive" target="_blank" rel="noopener noreferrer">More Reserve Coffees <span> &#8594;</span></a></h5>
+                
                 {/* Opening tag to the body/parent page */}
                 <div className="parent">{newArray}
             
-                    {/* Add coffee input box */}
-                    <div className="inputBox">
-                        <h2>Add Coffee: </h2>
-                        <label for="name">Name:</label>
-                        <input name="name" onChange={event => this.inputHandler(event)}></input><br></br>
-                        <label for="location">Location:</label>
-                        <input name="location" onChange={event => this.inputHandler(event)}></input><br></br>
-                        <label for="flavor">Flavors:</label>
-                        <input name="flavor" onChange={event => this.inputHandler(event)}></input><br></br>
-                        <label for="description">Notes:</label>
-                        <textarea name="description" rows="5" cols="30" onChange={event => this.inputHandler(event)}></textarea><br></br>
-                        <label for="picUrl">Add picture URL:</label>
-                        <input name="picUrl" onChange={event => this.inputHandler(event)}></input>
-                        <button className="openButton" onClick={() => this.createCoffee()}>Add</button>
-                    </div>
+                {/* Add coffee input box */}
+                <div className="inputBox">
+                    <h2>Add Coffee: </h2>
+                    <label for="name">Coffee Name:</label>
+                    <input name="name" onChange={event => this.inputHandler(event)}></input><br></br>
+                    <label for="location">Location:</label>
+                    <input name="location" onChange={event => this.inputHandler(event)}></input><br></br>
+                    <label for="flavor">Flavors:</label>
+                    <input name="flavor" onChange={event => this.inputHandler(event)}></input><br></br>
+                    <label for="description">Notes:</label>
+                    <textarea name="description" rows="5" cols="30" onChange={event => this.inputHandler(event)}></textarea><br></br>
+                    <label for="picUrl">Add picture URL:</label>
+                    <input name="picUrl" onChange={event => this.inputHandler(event)}></input>
+                    <button className="openButton" onClick={() => this.createCoffee()}>Add</button>
                 </div>
-                
+            </div> 
         </div>
         )
     }

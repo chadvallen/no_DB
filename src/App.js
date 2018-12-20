@@ -1,19 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/header/Header'
 import Body from './components/body/Body'
 import Weather from './components/weather/Weather'
 import Footer from './components/footer/Footer.js'
-
 import './App.css';
 
-class App extends Component {
-  constructor() {
-    super();
-
-  }
-
-  render() {
-
+export default function App() {
 
     return (
       <div>
@@ -24,6 +16,4 @@ class App extends Component {
       </div>
     );
   }
-}
 
-export default App;

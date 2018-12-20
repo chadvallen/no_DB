@@ -18,7 +18,7 @@
    padding: 20px 20px;
    margin: 30px 25px 20px 15px;
    justify-content: center;
-   background: rgb(20, 20, 20);
+   background: rgb(26, 26, 26);
    color: lightgray;
    border-radius: 10px;
    box-shadow: 15px 25px 40px rgba(0, 0, 0, .8);
@@ -26,7 +26,7 @@
   
 }
 
-/* Add coffee styles */
+/* Add new coffee styles */
 .inputBox {
     width: 300px;
     height: 350px;

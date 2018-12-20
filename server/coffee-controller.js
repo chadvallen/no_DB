@@ -91,7 +91,6 @@ coffeeSelection = [
     },
  
 ]
-
 let id = 11;
 
 module.exports = {
@@ -100,8 +99,6 @@ module.exports = {
     },
 
     createCoffee: (req, res) => {
-        console.log(req.body);
-        
         id++;
         const {name, flavor, location, picUrl, description} = req.body;
         const newCoffee = {name, flavor, location, picUrl, description, id: id};
